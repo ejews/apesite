@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOOGA BOOGA!!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            cursor: none;
+            overflow: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ascii-art {
+            font-family: monospace;
+            white-space: pre;
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 2rem;
+            font-size: 4px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .social-links a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .social-links a:hover {
+            background-color: #cccccc;
+        }
+        .particle {
+            position: absolute;
+            color: #ffffff;
+            pointer-events: none;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+            font-size: 12px;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the StoneAge</h1>
+        <h2>Ape's backyard</h2>
+    </header>
+    <main>
+        <div class="ascii-art">
+            @    @@#@  @@@@*                                            
+            @@##(##(####(##%(##(#@@@@      (                            
+      @, @(####@##@((###(########(#(@@@@&,@@,@                          
+      @#(####(&#@@,#(###(###(###(###(@@,,,,,,,,,,,@                     
+    @%(#(###%,,@...,,@##(###########(@@,,,,,,,,,,,,(@                   
+  @##&@###&...&......,,,@@#((###(######*,,,,,.,@........@               
+ @.#@@@@,.......,#%,.....,,@##%@@@(#####@,&...........,/*...            
+  @,./.@(,.........@@......./@######(#(@,@@..................@          
+  @.@@%@&@@&@@@@@@@@@@@@@@@#(,,%&#######%/...................%@         
+ @..@&@((@@@@...@#   %@(((#,*,###@@@@@##@@.....................         
+ @@###@..............@(#(#%####@,&,,,..@@.......................        
+@@###(##*,.....,,,%(@&###(###(####@..@..@,....................../.@      
+&*@##(((#@#@@/.@@((.  @###(######@#@..@@*,*....@..............,.....@     
+%@(#@@,.............,..@##(#######%#*,**,,#@.....,(@@*................@   
+..@@&###@##(#######@@@@@@##(#####@#/.@,,,,,.........(,,,,,@...............@
+,...,##(@(((((((((((((###((((#(#@#/.@,,,,,,,,..*.@,.@,,,,,@  @...........#. 
+@.@.....,@#####(#################@@@,,,@,,,,,//@@@,&,,,,,,,,,@    #@........., 
+..........@@##########((####@@@%@@,@,,,,,,,,,,,,,&&*@&**,,,,   @.........,*@@ 
+....,.......*@@#@@###@# #(&*(@@,,,,,,,,,@@,,%,,,,,,,,,,,,,@@  @,............@ 
+#@............@      ,      @,,,,*/,,,,,,,,,,,,,,,,,,,,,,,     %.........,..@* 
+,.,...........@             @,,,,,,,,,,,,,,,,,,,,,,,,,,,,@     .............@@&
+.............             @ ,,,,/,,,,,,,,,,,,,,/,,,,,,@.      @...........@#& 
+@...........@              @,,,,,,,,,,,,,,,,,,,,/*,,,@        @..........@#@  
+@..........@             @.#,,,,,,,,,,,,,,,,,,,,,,,@(@        /........@#@   
+*......,......@         (,.,@,@,/,*,,,//,,,,,@,@@.....@  @,..........,@#%    
+@................       &...,..@.@*,,,,,,,,,,@@@,.......@..............@@%    
+@..........@@..&      @,@....,@       @ *, @       &#..,................@     
+@...........@&@@.(      ...#....                  ....@....,@@@@.......@.@@   
+(.............%        ,......                 ......@.@####(##@......@     
+@@......@            ,.&..@                .......@######(##,....&@      
+    **              *.../                   @..%##########@.@.          
+                     (..@                  .@.@(((((((###               
+                   #@#@...@@             @*@///(######@@                
+       &@...,,,,.,@..........@         /&////###(##(###                 
+%@.%../...@@%.......#                 ####///############../@             
+     %@*(@ &@@&                    @(/////##(######@,...%@....,.@.,.@   
+                                 @######(##########@ *   @*&@           
+                              @##@##(##@@@@@######@                     
+                            @#((########(###(#@%@                       
+                           @##//(((#(#(########@                        
+                             #%#########(####@@                         
+                              @#############@                           
+                               %##########@                            
+        </div>
+        <div class="social-links">
+            <a href="https://discord.com/users/1227492957188395059" target="_blank">Discord</a>
+            <a href="https://t.me/GovContractor" target="_blank">Telegram</a>
+            <a href="https://github.com/choreographed" target="_blank">GitHub</a>
+        </div>
+    </main>
+
+    <script>
+        
+document.body.style.userSelect = 'none';
+document.body.style.webkitUserSelect = 'none';
+document.body.style.msUserSelect = 'none';
+
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+    return false;
+});
+
+document.addEventListener('dragstart', function(e) {
+    e.preventDefault();
+    return false;
+});
+        document.onkeydown = function(e) {
+    if (
+        e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67) ||
+        e.keyCode === 123
+    ) {
+        e.preventDefault();
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode === 85) {
+        e.preventDefault();
+        return false;
+    }
+};
+        document.onkeydown = function(e) {
+    if (e.ctrlKey && 
+        (e.keyCode === 67 || 
+         e.keyCode === 86 || 
+         e.keyCode === 85 || 
+         e.keyCode === 117)) {
+        return false;
+    } else {
+        return true;
+    }
+};
+        document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+        let lastX = 0;
+        let lastY = 0;
+        let particles = [];
+
+        function createParticle(x, y) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.textContent = '*';
+            
+            const size = Math.random() * 8 + 8; // Adjust size range here
+            particle.style.fontSize = `${size}px`;
+            
+            particle.style.left = `${x}px`;
+            particle.style.top = `${y}px`;
+            
+            const rotation = Math.random() * 360;
+            particle.style.transform = `rotate(${rotation}deg)`;
+            
+            document.body.appendChild(particle);
+            particles.push(particle);
+
+            setTimeout(() => {
+                particle.style.opacity = '0';
+                setTimeout(() => {
+                    particle.remove();
+                    particles = particles.filter(p => p !== particle);
+                }, 300);
+            }, 700);
+        }
+
+        function interpolateParticles(x1, y1, x2, y2) {
+            const distance = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+            const count = Math.floor(distance / 5);
+            
+            for (let i = 0; i < count; i++) {
+                const ratio = i / count;
+                const x = x1 + (x2 - x1) * ratio;
+                const y = y1 + (y2 - y1) * ratio;
+                createParticle(x, y);
+            }
+        }
+
+        document.addEventListener('mousemove', function(e) {
+            interpolateParticles(lastX, lastY, e.clientX, e.clientY);
+            lastX = e.clientX;
+            lastY = e.clientY;
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+            particles.forEach(particle => {
+                const rect = particle.getBoundingClientRect();
+                if (rect.bottom < 0 || rect.top > window.innerHeight || 
+                    rect.right < 0 || rect.left > window.innerWidth) {
+                    particle.remove();
+                    particles = particles.filter(p => p !== particle);
+                }
+            });
+        }
+
+        animate();
+
+        // New function to handle cursor visibility
+        function updateCursorVisibility(event) {
+            const target = event.target;
+            if (target.tagName === 'A' && target.closest('.social-links')) {
+                document.body.style.cursor = 'auto';
+            } else {
+                document.body.style.cursor = 'none';
+            }
+        }
+
+        document.addEventListener('mouseover', updateCursorVisibility);
+        document.addEventListener('mouseout', updateCursorVisibility);
+    </script>
+</body>
+</html>
